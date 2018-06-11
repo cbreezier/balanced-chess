@@ -1,0 +1,18 @@
+{
+  "name": "common",
+  "version": "1.0.0",
+  "description": "Common libs for server and client",
+  "main": "target/index.js",
+  "scripts": {
+    "flow": "flow",
+    "build": "rm -r target/ && babel src/ -d target/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.71.0"
+  }
+}

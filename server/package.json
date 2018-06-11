@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon server.js",
+    "mongo": "mongod --dbpath ./.mongodb/data --port 27017 --logpath ./.mongodb/mongod.log",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.1.0-beta4"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.74.0"
+  }
+}
