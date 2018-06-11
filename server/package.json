@@ -2,7 +2,8 @@
   "name": "server",
   "version": "1.0.0",
   "scripts": {
-    "start": "nodemon server.js",
+    "babel-node": "babel-node",
+    "start": "nodemon --exec npm run babel-node -- ./server.js",
     "mongo": "mongod --dbpath ./.mongodb/data --port 27017 --logpath ./.mongodb/mongod.log",
     "flow": "flow"
   },
@@ -11,6 +12,8 @@
     "mongodb": "^3.1.0-beta4"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "flow-bin": "^0.74.0"
   }
 }

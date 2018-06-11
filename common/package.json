@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Common libs for server and client",
   "main": "target/index.js",
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
   "scripts": {
     "flow": "flow",
     "build": "rm -r target/ && babel src/ -d target/",
