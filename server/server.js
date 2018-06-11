@@ -1,7 +1,7 @@
 'use strict';
 // @flow
 
-const express = require('express');
+import express from 'express';
 
 import { helloWorld } from 'common';
 
