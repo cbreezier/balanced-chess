@@ -1,5 +1,12 @@
 App
 ===
+This is a base node app with:
+ - React frontend created from create-react-app
+ - Simple express backend
+ - Mongodb support (coming soon)
+ - Flow typing
+ - A common module to be shared between frontend and backend
+
 Check `.nvmrc` for best node version
 
 Development
