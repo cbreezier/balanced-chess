@@ -10,7 +10,7 @@
   },
   "scripts": {
     "flow": "flow",
-    "build": "rm -r target/ && babel src/ -d target/",
+    "build": "npm run flow && rm -r target/ && babel src/ -d target/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
