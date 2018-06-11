@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { helloWorld } from 'common';
+
 type Props = {};
 type State = {
   response: string
@@ -40,7 +42,10 @@ class App extends Component<Props, State> {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          {this.state.response}
+          From the backend: {this.state.response}
+        </p>
+        <p className="App-intro">
+          From common libs: {helloWorld()}
         </p>
       </div>
     );
